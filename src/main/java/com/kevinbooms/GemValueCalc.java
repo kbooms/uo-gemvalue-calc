@@ -47,21 +47,21 @@ public class GemValueCalc {
         System.out.println("Please enter the amount of gems: ");
         Scanner gemCount = new Scanner(System.in);
         System.out.print("Citrines? ");
-        citrine = parseInt(gemCount.next()); // 244
+        citrine = parseInt(gemCount.next()); // 250
         System.out.print("Tourmalines? ");
-        tourmaline = parseInt(gemCount.next()); // 184
+        tourmaline = parseInt(gemCount.next()); // 196
         System.out.print("Ambers? ");
-        amber = parseInt(gemCount.next()); // 193
+        amber = parseInt(gemCount.next()); // 197
         System.out.print("Amethysts? ");
-        amethyst = parseInt(gemCount.next()); // 202
+        amethyst = parseInt(gemCount.next()); // 216
         System.out.print("Rubies? ");
-        ruby = parseInt(gemCount.next()); // 128
+        ruby = parseInt(gemCount.next()); // 130
         System.out.print("Sapphires? ");
         sapphire = parseInt(gemCount.next()); // 134
         System.out.print("Emeralds? ");
-        emerald = parseInt(gemCount.next()); // 48
+        emerald = parseInt(gemCount.next()); // 52
         System.out.print("Star Sapphires? ");
-        starSapphire = parseInt(gemCount.next()); // 64
+        starSapphire = parseInt(gemCount.next()); // 68
         System.out.print("Diamonds? ");
         diamond = parseInt(gemCount.next()); // 50
 
