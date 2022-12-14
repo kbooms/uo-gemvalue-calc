@@ -6,7 +6,7 @@ import static java.lang.Integer.parseInt;
 
     /*
     * So far this program is very rudimentary. It runs once, asks the user to input the number of gems
-    * in their bags, adn the program will calculate the individual and total gold value of each and all
+    * in their bags, and the program will calculate the individual and total gold value of each and all
     * gems they possess.
     *
     * Future changes will be to convert a lot of the functions into methods, implement a constructor
@@ -18,6 +18,7 @@ public class GemValueCalc {
 
     public static void main(String[] args) {
 
+        // these can be converted into class properties, perhaps I should use a Map
         int citrine = 0;
         int tourmaline = 0;
         int amber = 0;
@@ -28,6 +29,7 @@ public class GemValueCalc {
         int starSapphire =  0;
         int diamond = 0;
 
+        // values for a calculator class
         final int CITRINE_VALUE = 20;
         final int TOURMALINE_VALUE = 30;
         final int AMBER_VALUE = 40;
@@ -40,27 +42,30 @@ public class GemValueCalc {
 
         System.out.println("This simple calculator will add the total amount of gems you enter (representing your current bag) " +
                 "and calculate the vendor gold value of the gems you've entered. \n");
+
+        // method to take in user input
         System.out.println("Please enter the amount of gems: ");
         Scanner gemCount = new Scanner(System.in);
         System.out.print("Citrines? ");
-        citrine = parseInt(gemCount.next()); // 74
+        citrine = parseInt(gemCount.next()); // 244
         System.out.print("Tourmalines? ");
-        tourmaline = parseInt(gemCount.next()); // 51
+        tourmaline = parseInt(gemCount.next()); // 184
         System.out.print("Ambers? ");
-        amber = parseInt(gemCount.next()); // 44
+        amber = parseInt(gemCount.next()); // 193
         System.out.print("Amethysts? ");
-        amethyst = parseInt(gemCount.next()); // 51
+        amethyst = parseInt(gemCount.next()); // 202
         System.out.print("Rubies? ");
-        ruby = parseInt(gemCount.next()); // 31
+        ruby = parseInt(gemCount.next()); // 128
         System.out.print("Sapphires? ");
-        sapphire = parseInt(gemCount.next()); // 31
+        sapphire = parseInt(gemCount.next()); // 134
         System.out.print("Emeralds? ");
-        emerald = parseInt(gemCount.next()); // 14
+        emerald = parseInt(gemCount.next()); // 48
         System.out.print("Star Sapphires? ");
-        starSapphire = parseInt(gemCount.next()); // 31
+        starSapphire = parseInt(gemCount.next()); // 64
         System.out.print("Diamonds? ");
-        diamond = parseInt(gemCount.next()); // 9
+        diamond = parseInt(gemCount.next()); // 50
 
+        // method tp calculate total gem value
         int totalValue = ((CITRINE_VALUE * citrine) +
                 (TOURMALINE_VALUE * tourmaline) +
                 (AMBER_VALUE * amber) +
@@ -71,6 +76,8 @@ public class GemValueCalc {
                 (STAR_SAPPHIRE_VALUE * starSapphire) +
                 (DIAMOND_VALUE * diamond));
 
+
+        // method to diplay final output and print user input and total value
         System.out.println("Citrines:       " + citrine + " @ " + CITRINE_VALUE + " gp = " + (CITRINE_VALUE * citrine) + "gp");
         System.out.println("Tourmalines:    " + tourmaline + " @ " + TOURMALINE_VALUE + " gp = " + (TOURMALINE_VALUE * tourmaline) + "gp");
         System.out.println("Amber:          " + amber + " @ " + AMBER_VALUE + " gp = " + (AMBER_VALUE * amber) + "gp");
